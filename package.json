@@ -1,0 +1,29 @@
+{
+  "name": "fastify_official_guide",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon index.js | pino-pretty -c",
+    "postinstall": "npx typesync",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@prisma/client": "^4.3.1",
+    "fastify": "^4.5.3",
+    "fastify-cli": "^5.4.0",
+    "fastify-plugin": "^4.2.1"
+  },
+  "devDependencies": {
+    "@types/nodemon": "^1.19.2",
+    "nodemon": "^2.0.19",
+    "pino-pretty": "^9.1.0"
+  },
+  "prisma": {
+    "seed": "node prisma/seed.js"
+  }
+}
