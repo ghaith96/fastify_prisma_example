@@ -16,3 +16,16 @@ Content-Type: application/json
 {
     "animal": "lion"
 }
+
+###
+# Update Animal
+PUT {{HOST}}/animals/7
+Content-Type: application/json
+
+{
+    "animal": "hamster"
+}
+
+###
+# Delete Animal
+DELETE {{HOST}}/animals/7
